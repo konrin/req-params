@@ -1,0 +1,12 @@
+{
+  "name": "req-params",
+  "version": "1.0.1",
+  "description": "Check incoming parameters",
+  "keywords": "params, validate",
+  "main": "index.js",
+  "author": "Aleksandr Shirobokov",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.8.2"
+  }
+}
