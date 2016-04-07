@@ -306,7 +306,7 @@ exports.parse = function (raw, required) {
 
 exports.createRule = createRule;
 
-['length'].forEach((name) => {
+['length', 'email'].forEach((name) => {
     var rule = require('./rules/' + name);
 
     createRule(rule.name, rule.def, rule.fn, rule.message);

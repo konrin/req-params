@@ -52,7 +52,8 @@ const reqParams = require('./../index');
 
 var parse = reqParams.parse({
     id: '1',
-    name: 'User Name'
+    name: 'User Name',
+    email: 'wfefw'
 }, [
     'id:(int)',
     {
@@ -64,6 +65,14 @@ var parse = reqParams.parse({
         key: 'date',
         type: reqParams.TYPE_OBJECT,
         def: new Date()
+    },
+    {
+        key: 'email',
+        rules: [
+            {
+                name: 'email'
+            }
+        ]
     }
 ]);
 
